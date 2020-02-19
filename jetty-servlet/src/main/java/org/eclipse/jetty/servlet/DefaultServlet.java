@@ -392,8 +392,6 @@ public class DefaultServlet extends HttpServlet implements ResourceFactory, Welc
     private int getInitInt(String name, int dft)
     {
         String value = getInitParameter(name);
-        if (value == null)
-            value = getInitParameter(name);
         if (value != null && value.length() > 0)
             return Integer.parseInt(value);
         return dft;
